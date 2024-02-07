@@ -1,0 +1,26 @@
+#googleIcon:hover {
+    -fx-cursor: hand;
+}
+
+#givIcon:hover {
+    -fx-cursor: hand;
+}
+
+#generateFilesButton {
+    -fx-background-color: #333132;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand
+}
+
+#convertLabel {
+    -fx-font-weight: bold;
+}
+
+#googleTrash:hover {
+    -fx-cursor: hand;
+}
+
+#givTrash:hover {
+    -fx-cursor: hand;
+}

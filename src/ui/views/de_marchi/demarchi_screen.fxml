@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="429.0" prefWidth="498.0" stylesheets="@../de_marchi/demarchi.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.views.de_marchi.DemarchiController">
+   <top>
+      <Pane maxHeight="51.0" minHeight="51.0" prefHeight="51.0" prefWidth="467.0" style="-fx-background-color: #F4F4F4;" BorderPane.alignment="CENTER">
+
+            <Label contentDisplay="CENTER" layoutX="14.0" layoutY="18.0" maxHeight="16.0" minHeight="16.0" prefHeight="16.0" text="Relatório DE MARCHI" />
+
+      </Pane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="BOTTOM_RIGHT">
+         <center>
+            <VBox alignment="CENTER" prefHeight="298.0" prefWidth="467.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <HBox alignment="CENTER" prefHeight="137.0" prefWidth="474.0" spacing="200.0">
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0">
+                     <children>
+                        <Label fx:id="dysrupInputLabel" layoutX="44.0" layoutY="87.0" text="Entrada" textFill="#186f0e">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView id="fileIcon" fx:id="dysrupOriginalIcon" fitHeight="57.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/images/upload_excel_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="dysrupFileLabel" text="Dysrup">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView id="googleTrash" fx:id="dysrupTrash" fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../../../assets/images/trash.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0">
+                     <Label fx:id="googleInputLabel" layoutX="44.0" layoutY="87.0" text="Entrada" textFill="#186f0e">
+                        <VBox.margin>
+                           <Insets bottom="20.0" />
+                        </VBox.margin>
+                     </Label>
+                     <ImageView id="fileIcon" fx:id="googleOriginalIcon" fitHeight="57.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../assets/images/upload_excel_icon.png" />
+                     </ImageView>
+                     <Label fx:id="googleFileLabel" text="Google">
+                        <VBox.margin>
+                           <Insets top="20.0" />
+                        </VBox.margin>
+                     </Label>
+                     <ImageView id="googleTrash" fx:id="googleTrash" fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <VBox.margin>
+                           <Insets top="25.0" />
+                        </VBox.margin>
+                        <Image url="@../../../assets/images/trash.png" />
+                     </ImageView>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0">
+                     <Label fx:id="reportOutputLabel" text="Saída" textFill="#e37300">
+                        <VBox.margin>
+                           <Insets bottom="20.0" />
+                        </VBox.margin>
+                     </Label>
+                     <ImageView id="fileIcon" fx:id="reportIconUse" fitHeight="57.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../assets/images/upload_excel_icon.png" />
+                     </ImageView>
+                     <Label fx:id="reportFileLabel" text="Relatório">
+                        <VBox.margin>
+                           <Insets top="20.0" />
+                        </VBox.margin>
+                     </Label>
+                     <ImageView id="reportTrashUse" fx:id="reportTrashUse" fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <VBox.margin>
+                           <Insets top="25.0" />
+                        </VBox.margin>
+                        <Image url="@../../../assets/images/trash.png" />
+                     </ImageView>
+                  </VBox>
+               </HBox>
+               <Button id="updateButton" fx:id="updateFileButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="102.0" text="Atualizar">
+                  <VBox.margin>
+                     <Insets top="50.0" />
+                  </VBox.margin>
+               </Button>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox alignment="CENTER_LEFT" prefHeight="102.0" prefWidth="228.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" left="50.0" />
+               </BorderPane.margin>
+               <Label prefHeight="18.0" prefWidth="128.0" style="-fx-font-weight: bold;" text="Bandeira:">
+                  <VBox.margin>
+                     <Insets bottom="10.0" />
+                  </VBox.margin>
+               </Label>
+               <VBox fx:id="checkBoxVerticalBox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                  <CheckBox fx:id="bhCheckBox" mnemonicParsing="false" prefHeight="18.0" prefWidth="234.0" text="Supermercados BH" />
+                  <CheckBox fx:id="atacarejoCheckBox" mnemonicParsing="false" prefHeight="18.0" prefWidth="234.0" text="Atacarejo BH" />
+               </VBox>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </center>
+   <left>
+      <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

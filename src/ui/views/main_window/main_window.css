@@ -1,0 +1,18 @@
+#sideMenuButton {
+    -fx-background-color: #FFFFFF;
+}
+
+#menuLabel:hover {
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+#sideMenuButton:hover {
+    -fx-cursor: hand;
+    -fx-underline: true;
+    -fx-background-color: #F4F4F4;
+}
+
+#expandMenuIcon:hover {
+    -fx-cursor: hand;
+}

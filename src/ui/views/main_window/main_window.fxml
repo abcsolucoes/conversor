@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane stylesheets="@main_window.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.views.main_window.MainWindowController">
+   <center>
+      <BorderPane fx:id="mainPane" BorderPane.alignment="TOP_CENTER">
+         <center>
+            <AnchorPane prefHeight="291.0" prefWidth="467.0" style="-fx-background-color: #FFFFFF;" stylesheets="@main_window.css" />
+         </center>
+      </BorderPane>
+   </center>
+   <left>
+      <ScrollPane fx:id="sideMenu" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308">
+         <AnchorPane maxHeight="1.7976931348623157E308" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+            <VBox prefHeight="369.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <HBox fx:id="homeHbox" alignment="CENTER_LEFT" maxHeight="59.0" minHeight="59.0" prefHeight="59.0" prefWidth="200.0" style="-fx-background-color: #f8b100;">
+                  <ImageView fx:id="expandMenuIcon" fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <Image url="@../../../assets/images/menu/hide_menu.png" />
+                  </ImageView>
+                  <Label fx:id="menuLabel" alignment="CENTER" contentDisplay="CENTER" text="Home">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </HBox>
+               <Button id="sideMenuButton" fx:id="convertMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="Conversor">
+                  <graphic>
+                     <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/excel.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+               <Button id="sideMenuButton" fx:id="productsMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="Produtos CD">
+                  <graphic>
+                     <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/product_update.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+               <Button id="sideMenuButton" fx:id="routeMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="Roteiros">
+                  <graphic>
+                     <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/delivery-truck.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+               <Button id="sideMenuButton" fx:id="selmiMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="SELMI">
+                  <graphic>
+                     <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/selmi-logo.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+               <Button id="sideMenuButton" fx:id="igarapeMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="IGARAPÉ">
+                  <graphic>
+                     <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/igarape_logo.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+               <Button id="sideMenuButton" fx:id="frootyMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="FROOTY">
+                  <graphic>
+                     <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/frooty-logo.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+               <Button id="sideMenuButton" fx:id="demarchiMenuButton" alignment="TOP_LEFT" maxHeight="59.0" minHeight="59.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="221.0" text="DE MARCHI">
+                  <graphic>
+                     <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                        <Image url="@../../../assets/images/menu/demarchi-logo.png" />
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </Button>
+            </VBox>
+         </AnchorPane>
+      </ScrollPane>
+   </left>
+</BorderPane>

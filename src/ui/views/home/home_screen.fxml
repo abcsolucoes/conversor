@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="429.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.views.home.HomeController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="298.0" prefWidth="467.0" style="-fx-background-color: #FFFFFF;"
+            BorderPane.alignment="CENTER">
+         <ImageView id="abcLogo" fx:id="abcLogo" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@../../../assets/images/abc_solucoes_logo_site.png"/>
+         </ImageView>
+      </VBox>
+   </center>
+   <top>
+      <Pane fx:id="topPane" maxHeight="51.0" minHeight="51.0" prefHeight="51.0" prefWidth="467.0"
+            style="-fx-background-color: #F4F4F4;" BorderPane.alignment="CENTER">
+         <Label fx:id="currentScreenNameLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="18.0" maxHeight="16.0"
+                minHeight="16.0" prefHeight="16.0" text="Home"/>
+      </Pane>
+   </top>
+</BorderPane>

@@ -1,0 +1,14 @@
+#fileIcon:hover {
+    -fx-cursor: hand;
+}
+
+#updateProductsButton {
+    -fx-background-color: #333132;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand
+}
+
+#trashIcon:hover {
+    -fx-cursor: hand;
+}
